@@ -1,0 +1,17 @@
+Look for any file owned by user flag00 and hide error output by redirecting it to /dev/null.
+
+find / -user flag00 2>/dev/null
+/usr/sbin/john
+/rofs/usr/sbin/john
+
+cat /usr/sbin/john
+cdiiddwpgswtgt
+
+This password doesnt work, we need to decrypt this
+We try to decrypt it using the ROT alghoritm at https://www.dcode.fr/chiffre-rot
+We see that ROT15 gives us "nottoohardhere"
+
+su flag00
+nottoohardhere
+get flag
+Check flag. Here is your token: x24ti5gi3x0ol2eh4esiuxias
