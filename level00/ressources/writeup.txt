@@ -8,8 +8,8 @@ cat /usr/sbin/john
 cdiiddwpgswtgt
 
 This password doesnt work, we need to decrypt this
-We try to decrypt it using the ROT alghoritm at https://www.dcode.fr/chiffre-rot
-We see that ROT15 gives us "nottoohardhere"
+We've tried to decrypt it using the ROT alghoritm at https://www.dcode.fr/chiffre-rot
+We sew that ROT15 gives us "nottoohardhere"
 
 su flag00
 nottoohardhere
