@@ -1,0 +1,14 @@
+We decided to check all the users in the system so we `cat /etc/passwd`
+In passwd file we spotted that flag01 user has string instead of x ('42hDRfypTqqnw'), some googling gave us that usually passwords stored hashed in shadow file,
+but it also may be stored in passwd file.
+
+More googling and we found out that simple hashes may be brute forced via JohnTheRipper utility
+sudo apt-get install john
+put password hash in file and run john on it
+john file_with_hash
+it gives us unsiphered password
+>42hDRfypTqqnw:abcdefg
+su flag01
+>abcdefg
+getflag
+>f2av5il02puano7naaf6adaaf
